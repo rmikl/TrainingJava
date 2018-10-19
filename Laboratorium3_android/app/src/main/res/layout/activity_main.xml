@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zpum.lab3.laboratorium3.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextNazwa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Nazwa" />
+
+        <EditText
+            android:id="@+id/editTextNumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Numer" />
+
+        <Button
+            android:id="@+id/buttonDodaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDod"
+            android:text="Dodaj" />
+
+        <Button
+            android:id="@+id/buttonUsuń"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickUs"
+            android:text="Usuń" />
+
+        <Button
+            android:id="@+id/buttonWyswietl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickWysw"
+            android:text="Wyswietl Baze" />
+
+        <TextView
+            android:id="@+id/textViewBaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zawartość Bazy" />
+
+        <TextView
+            android:id="@+id/textViewZawartosc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
